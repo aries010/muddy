@@ -11,6 +11,7 @@
     <modules>
         <module>muddy-client</module>
         <module>muddy-server</module>
+        <module>muddy-common</module>
     </modules>
 
     <name>muddy</name>
@@ -27,10 +28,22 @@
                 <artifactId>netty-all</artifactId>
                 <version>4.1.49.Final</version>
             </dependency>
+
+            <dependency>
+                <artifactId>muddy-common</artifactId>
+                <groupId>com.linc</groupId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
